@@ -9,18 +9,18 @@ namespace MyMathFunctions
     {
         public MyMathClass()
         {
-            if (_PrimeList == null)
+            if (_primeList == null)
             {
-                _PrimeList = new List<long>();
+                _primeList = new List<long>();
 
                 // Initialise the Prime List with the first two primes
-                _PrimeList.Add(2);
-                _PrimeList.Add(3);
+                _primeList.Add(2);
+                _primeList.Add(3);
             }
         }
 
         // our cache
-        private List<long> _PrimeList;
+        private readonly List<long> _primeList;
 
         // Using strict Sieve of Eratosthenes method
         public List<long> GetListOfPrimesUpTo(long maxNumber)
@@ -65,20 +65,20 @@ namespace MyMathFunctions
             }
 
             // Check if we have it in cache
-            if (_PrimeList.Count >= index)
+            if (_primeList.Count >= index)
             {
-                return _PrimeList[index - 1];
+                return _primeList[index - 1];
             }
 
             // We don't have it in cache, so we have to find it                        
-            for (long i = _PrimeList.Last() + 2; ; i += 2)
+            for (long i = _primeList.Last() + 2; ; i += 2)
             {
                 if (IsPrime(i))
                 {
-                    _PrimeList.Add(i);
+                    _primeList.Add(i);
                 }
 
-                if (_PrimeList.Count == index)
+                if (_primeList.Count == index)
                 {
                     return i;
                 }
@@ -90,6 +90,7 @@ namespace MyMathFunctions
         public static bool IsPrime(long number)
         {
             #region "Low hanging fruits"
+
             if (number <= 1)
             {
                 return false;
@@ -104,6 +105,7 @@ namespace MyMathFunctions
             {
                 return false;
             }
+
             #endregion
 
             long root = (long)Math.Sqrt(number);
