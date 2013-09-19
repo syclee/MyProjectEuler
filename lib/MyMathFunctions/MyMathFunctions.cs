@@ -87,6 +87,8 @@ namespace MyMathFunctions
             throw new InvalidOperationException("Shouldn't have got to this part. Method is buggy");
         }
 
+        public static bool IsPalindrome()
+
         public static bool IsPrime(long number)
         {
             #region "Low hanging fruits"

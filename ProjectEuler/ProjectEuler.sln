@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE11", "PE11\PE11\PE11.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMathFunctions", "..\lib\MyMathFunctions\MyMathFunctions.csproj", "{748E1E60-AA5B-42D1-9908-3995BBB4BE4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE4", "PE4\PE4.csproj", "{5545C6CC-76C0-40ED-B036-627F967C6336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,16 @@ Global
 		{748E1E60-AA5B-42D1-9908-3995BBB4BE4B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{748E1E60-AA5B-42D1-9908-3995BBB4BE4B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{748E1E60-AA5B-42D1-9908-3995BBB4BE4B}.Release|x86.ActiveCfg = Release|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5545C6CC-76C0-40ED-B036-627F967C6336}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
