@@ -43,7 +43,7 @@ namespace PE11
 
         static void Main(string[] args)
         {
-            int[][] grid = ProjectEuler.ProblemHelper.PE11GetGrid();
+            //int[][] grid = ProjectEuler.ProblemHelper.PE11GetGrid();
 
 
             // Find horizontally

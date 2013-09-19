@@ -47,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyMathsLibrary\MyMathsLibrary.csproj">
-      <Project>{9A220B1B-6E9A-4BDA-81B0-1F7635B69508}</Project>
-      <Name>MyMathsLibrary</Name>
+    <ProjectReference Include="..\..\..\lib\MyMathFunctions\MyMathFunctions.csproj">
+      <Project>{748e1e60-aa5b-42d1-9908-3995bbb4be4b}</Project>
+      <Name>MyMathFunctions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

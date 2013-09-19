@@ -47,8 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyMathFunctions\MyMathFunctions.csproj">
-      <Project>{748E1E60-AA5B-42D1-9908-3995BBB4BE4B}</Project>
+    <ProjectReference Include="..\..\..\lib\MyMathFunctions\MyMathFunctions.csproj">
+      <Project>{748e1e60-aa5b-42d1-9908-3995bbb4be4b}</Project>
       <Name>MyMathFunctions</Name>
     </ProjectReference>
   </ItemGroup>

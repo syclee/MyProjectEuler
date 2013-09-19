@@ -15,7 +15,7 @@ namespace PE3v2
         static void Main(string[] args)
         {
             // first, check if the suspect is a prime number
-            if (Prime.IsPrime(PRIME_SUSPECT))
+            if (MyMathClass.IsPrime(PRIME_SUSPECT))
             {
                 Console.WriteLine("The Prime Suspect " + PRIME_SUSPECT.ToString() + "is itself a prime number!");
                 Console.ReadLine();
@@ -34,7 +34,7 @@ namespace PE3v2
 
             while (newPrimeSuspect > 2)
             {
-                if (Prime.IsPrime(newPrimeSuspect) && PRIME_SUSPECT % newPrimeSuspect == 0)
+                if (MyMathClass.IsPrime(newPrimeSuspect) && PRIME_SUSPECT % newPrimeSuspect == 0)
                 {
                     greatestPrimeFactor = newPrimeSuspect;
                     break;

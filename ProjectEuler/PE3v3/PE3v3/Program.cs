@@ -28,7 +28,7 @@ namespace PE3v3
                 {
                     long quotient = PRIME_SUSPECT/i;
 
-                    if (Prime.IsPrime(quotient))
+                    if (MyMathClass.IsPrime(quotient))
                     {
                         GreatestPrimeFactor = quotient;
                     }

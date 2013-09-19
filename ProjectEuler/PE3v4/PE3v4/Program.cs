@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MyMathsLibrary;
+using MyMathFunctions;
 
 // Project Euler Problem 3:
 // The prime factors of 13195 are 5, 7, 13 and 29.
@@ -21,7 +21,8 @@ namespace PE3v4
             bool isPrime = false;
             long primeSuspect = THE_PRIME_SUSPECT;            
             
-            isPrime = MyMathsClass.IsPrime(primeSuspect, ref gcd);
+            
+            isPrime = MyMathClass.IsPrime(primeSuspect, ref gcd);
 
             if (isPrime)
             {
@@ -31,7 +32,7 @@ namespace PE3v4
 
             primeSuspect = gcd;
 
-            while(!MyMathsClass.IsPrime(primeSuspect, ref gcd))
+            while (!MyMathClass.IsPrime(primeSuspect, ref gcd))
             {
                 primeSuspect = gcd;
             }
