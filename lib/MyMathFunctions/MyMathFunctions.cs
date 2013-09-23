@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MyMathFunctions
 {
-    public class MyMathClass
+    public class MyMathClass : IMathFunctions
     {
         public MyMathClass()
         {
@@ -143,9 +143,7 @@ namespace MyMathFunctions
             }
 
             return true;
-        }
-
-        
+        }       
 
         private static long GetGreatestAdjacentHorizontalProductInGrid(int[][] grid, int adjacentCount)
         {
@@ -198,6 +196,16 @@ namespace MyMathFunctions
             }
 
             return isPalindrome;
+        }
+
+        public int Lcm(int a, int b)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Gcd(int a, int b)
+        {
+            throw new NotImplementedException();
         }
     }
 }
