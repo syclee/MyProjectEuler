@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5545C6CC-76C0-40ED-B036-627F967C6336}</ProjectGuid>
+    <ProjectGuid>{C0A928DB-9416-45C3-979D-238914AA6413}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PE4</RootNamespace>
-    <AssemblyName>PE4</AssemblyName>
+    <RootNamespace>PE5</RootNamespace>
+    <AssemblyName>PE5</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,12 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\lib\MyMathFunctions\MyMathFunctions.csproj">
-      <Project>{748e1e60-aa5b-42d1-9908-3995bbb4be4b}</Project>
-      <Name>MyMathFunctions</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

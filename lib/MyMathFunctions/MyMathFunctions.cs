@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MyMathFunctions
 {
-    public class MyMathClass
+    public class MyMathClass : IMathFunctions
     {
         public MyMathClass()
         {
@@ -87,8 +87,6 @@ namespace MyMathFunctions
             throw new InvalidOperationException("Shouldn't have got to this part. Method is buggy");
         }
 
-        public static bool IsPalindrome()
-
         public static bool IsPrime(long number)
         {
             #region "Low hanging fruits"
@@ -145,9 +143,7 @@ namespace MyMathFunctions
             }
 
             return true;
-        }
-
-        
+        }       
 
         private static long GetGreatestAdjacentHorizontalProductInGrid(int[][] grid, int adjacentCount)
         {
@@ -175,6 +171,39 @@ namespace MyMathFunctions
         }
 
         public static long GetGreatestAdjacentProductInGrid(int[][] grid, int adjacentCount)
+        {
+            throw new NotImplementedException();
+        }
+    
+        public static bool IsPalindrome(int number)
+        {
+            var numberText = number.ToString();
+
+            if (numberText.Length % 2 != 0)
+            {
+                return false;
+            }
+
+            bool isPalindrome = false;
+            var middleIndex = numberText.Length/2;
+            var numberTextFirstHalf = numberText.Substring(0, middleIndex);
+            var numberTextSecondHalf = numberText.Substring(middleIndex, middleIndex);
+            var reversed =  new string(numberTextSecondHalf.Reverse().ToArray());
+
+            if (numberTextFirstHalf == reversed)
+            {
+                isPalindrome = true;
+            }
+
+            return isPalindrome;
+        }
+
+        public int Lcm(int a, int b)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Gcd(int a, int b)
         {
             throw new NotImplementedException();
         }
